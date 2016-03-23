@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00583FD5A083C55C0623F261 /* libPods-encryptSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F724A13FB66D30272762905C /* libPods-encryptSample.a */; };
+		70BA638A1CA25F8F00369916 /* AppAdForce.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BA63891CA25F8F00369916 /* AppAdForce.plist */; };
 		70C574D91CA146A80065554D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C574D81CA146A80065554D /* main.m */; };
 		70C574DC1CA146A80065554D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C574DB1CA146A80065554D /* AppDelegate.m */; };
 		70C574DF1CA146A80065554D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C574DE1CA146A80065554D /* ViewController.m */; };
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70BA63891CA25F8F00369916 /* AppAdForce.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppAdForce.plist; sourceTree = "<group>"; };
 		70C574D41CA146A80065554D /* encryptSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encryptSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C574D81CA146A80065554D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70C574DA1CA146A80065554D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		70C574F81CA146A80065554D /* encryptSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = encryptSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C574FC1CA146A80065554D /* encryptSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = encryptSampleUITests.m; sourceTree = "<group>"; };
 		70C574FE1CA146A80065554D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F94C76BBFA9788FCDC9D471 /* Pods-encryptSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-encryptSample/Pods-encryptSample.debug.xcconfig"; sourceTree = "<group>"; };
+		F724A13FB66D30272762905C /* libPods-encryptSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-encryptSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE28F305041E84A732875250 /* Pods-encryptSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-encryptSample/Pods-encryptSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00583FD5A083C55C0623F261 /* libPods-encryptSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AA98DFD0169FC2B1A903DEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70BA63891CA25F8F00369916 /* AppAdForce.plist */,
+				F724A13FB66D30272762905C /* libPods-encryptSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70C574CB1CA146A80065554D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				70C574F01CA146A80065554D /* encryptSampleTests */,
 				70C574FB1CA146A80065554D /* encryptSampleUITests */,
 				70C574D51CA146A80065554D /* Products */,
+				E20A87D288E3DDE92CEB50D6 /* Pods */,
+				4AA98DFD0169FC2B1A903DEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +158,15 @@
 			path = encryptSampleUITests;
 			sourceTree = "<group>";
 		};
+		E20A87D288E3DDE92CEB50D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F94C76BBFA9788FCDC9D471 /* Pods-encryptSample.debug.xcconfig */,
+				FE28F305041E84A732875250 /* Pods-encryptSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70C575011CA146A80065554D /* Build configuration list for PBXNativeTarget "encryptSample" */;
 			buildPhases = (
+				C7176DAD8B8399FAF51AFAE9 /* Check Pods Manifest.lock */,
 				70C574D01CA146A80065554D /* Sources */,
 				70C574D11CA146A80065554D /* Frameworks */,
 				70C574D21CA146A80065554D /* Resources */,
+				D503433584C19447D4B53BE0 /* Embed Pods Frameworks */,
+				AC71D7082BE3DDAC98CCA79E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BA638A1CA25F8F00369916 /* AppAdForce.plist in Resources */,
 				70C574E71CA146A80065554D /* LaunchScreen.storyboard in Resources */,
 				70C574E41CA146A80065554D /* Assets.xcassets in Resources */,
 				70C574E21CA146A80065554D /* Main.storyboard in Resources */,
@@ -264,6 +295,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC71D7082BE3DDAC98CCA79E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptSample/Pods-encryptSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7176DAD8B8399FAF51AFAE9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D503433584C19447D4B53BE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-encryptSample/Pods-encryptSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70C574D01CA146A80065554D /* Sources */ = {
@@ -411,6 +490,7 @@
 		};
 		70C575021CA146A80065554D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F94C76BBFA9788FCDC9D471 /* Pods-encryptSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = encryptSample/Info.plist;
@@ -422,6 +502,7 @@
 		};
 		70C575031CA146A80065554D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE28F305041E84A732875250 /* Pods-encryptSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = encryptSample/Info.plist;
@@ -498,6 +579,7 @@
 				70C575031CA146A80065554D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70C575041CA146A80065554D /* Build configuration list for PBXNativeTarget "encryptSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +588,7 @@
 				70C575061CA146A80065554D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70C575071CA146A80065554D /* Build configuration list for PBXNativeTarget "encryptSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +597,7 @@
 				70C575091CA146A80065554D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

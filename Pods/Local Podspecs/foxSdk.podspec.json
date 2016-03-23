@@ -1,0 +1,34 @@
+{
+  "name": "foxSdk",
+  "version": "3.0.0",
+  "summary": "FOX iOS SDK for global use.",
+  "description": "Pod integration for F.O.X SDK",
+  "homepage": "https://github.com/cyber-z/public-fox-ios-sdk",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright © CyberZ, inc. All Rights Reserved."
+  },
+  "authors": "CyberZ inc.",
+  "source": {
+    "http": "https://github.com/cyber-z/public-fox-ios-sdk/releases/download/3.0.0/FOX_iOS_SDK_3.0.0.zip"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": false,
+  "source_files": "**/*.{h,m}",
+  "vendored_libraries": "**/*.a",
+  "public_header_files": "**/*.h",
+  "frameworks": [
+    "Foundation",
+    "Security",
+    "StoreKit",
+    "iAd",
+    "AdSupport",
+    "SystemConfiguration"
+  ],
+  "weak_frameworks": "SafariServices",
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "$(PODS_ROOT)/foxSdk"
+  }
+}

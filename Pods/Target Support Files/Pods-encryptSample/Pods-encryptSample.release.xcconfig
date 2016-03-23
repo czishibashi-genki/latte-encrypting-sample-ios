@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/foxSdk"
+LIBRARY_SEARCH_PATHS = $(PODS_ROOT)/foxSdk $(inherited) "${PODS_ROOT}/foxSdk/FOX_iOS_SDK_3.0.0"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/foxSdk"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FoxSdk" -framework "AdSupport" -framework "Foundation" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "iAd" -weak_framework "SafariServices"
+PODS_ROOT = ${SRCROOT}/Pods
